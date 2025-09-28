@@ -44,12 +44,19 @@
         "fof/custom-footer": "^1.1",
         "fof/pages": "^1.0",
         "fof/upload": "^1.8",
-        "fof/user-directory": "^1.4"
+        "fof/user-directory": "^1.4",
+        "local/diabetes-type": "@dev"
     },   
     "config": {
         "preferred-install": "dist",
         "sort-packages": true
     },
     "minimum-stability": "beta",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "diabetes-type": {
+            "type": "path",
+            "url": "extensions/diabetes-type"
+        }
+    }
 }

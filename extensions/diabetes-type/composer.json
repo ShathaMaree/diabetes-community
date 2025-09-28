@@ -1,0 +1,10 @@
+{
+  "name": "local/diabetes-type",
+  "type": "flarum-extension",
+  "autoload": { "psr-4": { "Local\\DiabetesType\\": "src/" } },
+  "extra": {
+    "flarum-extension": {
+      "title": "Diabetes Type"
+    }
+  }
+}

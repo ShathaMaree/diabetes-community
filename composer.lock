@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "915fe8de8af1ac38bd74f38cc0beeecb",
+    "content-hash": "3fcf2ca85849d1b1f15eba92e371ccb3",
     "packages": [
         {
             "name": "askvortsov/flarum-moderator-warnings",
@@ -5556,6 +5556,29 @@
             "time": "2024-09-21T08:32:55+00:00"
         },
         {
+            "name": "local/diabetes-type",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "extensions/diabetes-type",
+                "reference": "4ffdd3d10f236e8840043e9ee49cd68e691ab377"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Diabetes Type"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Local\\DiabetesType\\": "src/"
+                }
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "matthiasmullie/minify",
             "version": "1.3.75",
             "source": {
@@ -10059,7 +10082,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": {},
+    "stability-flags": {
+        "local/diabetes-type": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
