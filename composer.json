@@ -23,6 +23,7 @@
     "require": {
         "askvortsov/flarum-moderator-warnings": "^0.6.3",
         "askvortsov/flarum-rich-text": "^2.1",
+        "clarkwinkelmann/flarum-ext-anonymous-posting": "*",
         "clarkwinkelmann/flarum-ext-post-bookmarks": "^1.0",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
