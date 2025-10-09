@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e84b337d0192451d44f918d1beff01bd",
+    "content-hash": "05e7c37383636506405f3ddc5cd4fc68",
     "packages": [
         {
             "name": "askvortsov/flarum-moderator-warnings",
@@ -2870,6 +2870,105 @@
                 }
             ],
             "time": "2025-03-12T10:05:43+00:00"
+        },
+        {
+            "name": "fof/byobu",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/byobu.git",
+                "reference": "e68accb942f22c65ea9eacc7ef0f1d75441fab9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/byobu/zipball/e68accb942f22c65ea9eacc7ef0f1d75441fab9b",
+                "reference": "e68accb942f22c65ea9eacc7ef0f1d75441fab9b",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.6",
+                "php": "^8.0"
+            },
+            "replace": {
+                "flagrow/byobu": "*"
+            },
+            "require-dev": {
+                "flarum/flags": "*",
+                "flarum/phpstan": "*",
+                "flarum/testing": "^1.0.0",
+                "fof/split": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "extiverse": {
+                    "discuss": "https://discuss.flarum.org/d/4762"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "image": "resources/logo.svg",
+                        "backgroundSize": "90%",
+                        "backgroundColor": "#e74c3c",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    },
+                    "title": "FoF Byōbu",
+                    "category": "feature",
+                    "optional-dependencies": [
+                        "flarum/suspend",
+                        "flarum/flags",
+                        "flarum/tags",
+                        "flarum/approval",
+                        "v17development/flarum-support"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Byobu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@blomstra.net"
+                },
+                {
+                    "name": "IanM",
+                    "email": "ian@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Well integrated, advanced private discussions.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum",
+                "fof",
+                "messaging",
+                "pm",
+                "private discussions"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/4762",
+                "issues": "https://github.com/FriendsOfFlarum/byobu/issues",
+                "source": "https://github.com/FriendsOfFlarum/byobu"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2025-06-10T12:32:42+00:00"
         },
         {
             "name": "fof/custom-footer",
@@ -6139,6 +6238,88 @@
                 }
             ],
             "time": "2022-06-09T08:53:42+00:00"
+        },
+        {
+            "name": "neoncube/flarum-private-messages",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neoncube2/flarum-private-messages.git",
+                "reference": "1eeb656fd0173f3193335307599b5cf0d7d30942"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neoncube2/flarum-private-messages/zipball/1eeb656fd0173f3193335307599b5cf0d7d30942",
+                "reference": "1eeb656fd0173f3193335307599b5cf0d7d30942",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.5"
+            },
+            "replace": {
+                "kyrne/whisper": "<=0.1.4",
+                "littlecxm/whisper": "<0.1.5"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-comment-alt",
+                        "color": "#000",
+                        "background": "#ADD445"
+                    },
+                    "title": "Private messages",
+                    "category": "feature"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Neoncube\\FlarumPrivateMessages\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charlie Kern",
+                    "email": "Charlie.K@redevs.org",
+                    "homepage": "https://redevs.org"
+                },
+                {
+                    "name": "David Wheatleu",
+                    "email": "hi@davwheat.dev",
+                    "homepage": "https://davwheat.dev"
+                },
+                {
+                    "name": "CXM",
+                    "email": "littlecxm@gmail.com",
+                    "homepage": "https://littlecxm.me"
+                },
+                {
+                    "name": "Eli Black",
+                    "email": "eliblack@outlook.com",
+                    "homepage": "https://mylittlewordland.com"
+                }
+            ],
+            "description": "A Flarum extension for adding private messages to your forum! Private messages (PM's) are also known as \"direct messages\" (DM's). (e.g. \"Send me a PM!\" or \"Send me a DM!\")",
+            "keywords": [
+                "DM",
+                "direct messaging",
+                "direct messsage",
+                "flarum",
+                "friendsofflarum",
+                "pm",
+                "private message",
+                "private messaging"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/35388-private-messages",
+                "issues": "https://github.com/neoncube/flarum-private-messaging/issues",
+                "source": "https://github.com/neoncube/flarum-private-messaging"
+            },
+            "time": "2025-03-28T09:25:54+00:00"
         },
         {
             "name": "nesbot/carbon",

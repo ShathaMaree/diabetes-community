@@ -42,11 +42,13 @@
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "^1.8",
+        "fof/byobu": "*",
         "fof/custom-footer": "^1.1",
         "fof/pages": "^1.0",
         "fof/upload": "^1.8",
         "fof/user-directory": "^1.4",
-        "local/diabetes-type": "@dev"
+        "local/diabetes-type": "@dev",
+        "neoncube/flarum-private-messages": "*"
     },   
     "config": {
         "preferred-install": "dist",
