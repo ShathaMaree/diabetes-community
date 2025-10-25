@@ -7,6 +7,10 @@ use Flarum\User\Event\Registered;
 use Flarum\Api\Serializer\UserSerializer;
 
 return [
+    // (new Extend\Frontend('forum'))
+    //    ->js(__DIR__.'/js/dist/forum.js')
+    //    ->css(__DIR__.'/resources/less/forum.less'),
+
     // Store as string on the model
     (new Extend\Model(User::class))
         ->cast('diabetes_type', 'string'),
